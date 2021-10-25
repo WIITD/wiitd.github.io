@@ -1,0 +1,220 @@
+#+TITLE: dev_tools
+#+DESCRIPTION: list of tools, libraries, frameworks, game engines, languages for game and app development
+#+AUTHOR: Michał 'wiitd' KM
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+#+OPTIONS: num:nil
+
+!!! disclaimer: list contains only software i used/consider good, almost every entry here is FOSS or free and source available
+
+no unity, ue, cryengine, [insert popular game engine name],..., they are/might be good but lacks some things i consider essential like small size, lightweight, portable
+
+ - name
+   + (langs) <- official support
+   + {bindings} <- community maintained
+   + [platforms] <- works on or can export/compile to
+
+* libs
+- [[https://www.raylib.com/][raylib]]
+  + (c/cpp)
+  + {csharp, lua, haxe, freebasic, go,...}
+  + [linux, mac, win, mobile, web]
+
+- [[https://www.libsdl.org/][sdl]]
+  + (c/cpp)
+  + {csharp, lua, haxe, freebasic, go,...}
+  + [linux, mac, win, web, mobile,...]
+
+- [[http://www.tilengine.org/index.htm][tilengine]]
+  + (c/cpp)
+  + {csharp, python, pascal, freebasic, java,...}
+  + [linux, mac, win]
+
+- [[https://liballeg.org/][allegro]]
+  + (c/cpp)
+  + {freebasic,...}
+  + [linux, mac, win]
+
+- [[https://ebiten.org/][ebiten]]
+  + (go)
+  + [linux, mac, win, mobile, web, switch]
+
+- [[https://github.com/faiface/pixel][pixel]]
+  + (go)
+  + [linux, mac, win]
+
+* frameworks
+- [[https://love2d.org/][love2d]]
+  + (lua)
+  + [linux, mac, win, mobile, *web] * developed by comunity
+
+- [[https://lovr.org/][lovr]]
+  + (lua)
+  + [linux, mac, win, android, web]
+
+- [[https://www.amulet.xyz/][amulet]]
+  + (lua)
+  + [linux, mac, win, mobile, web]
+
+- [[https://haxepunk.com/][haxepunk]]
+  + (haxe)
+  + [linux, mac, win, web]
+
+- [[https://libgdx.com/][libgdx]]
+  + (java)
+  + [linux, mac, win, mobile, web]
+
+- [[https://github.com/Kode/Kha][kha]]
+  + (haxe)
+  + [linux, mac, linux, mobile, web, consoles,..., unity3d?!]
+
+* game engine (+editor)
+- [[https://godotengine.org/][godot]]
+  + (cpp, gdscript, csharp, codeless)
+  + {rust, lua, nim}
+  + [linux, mac, win, web]
+
+- [[https://defold.com/][defold]]
+  + (lua)
+  + {haxe}
+  + [linux, mac, win, mobile, web, switch]
+
+- [[https://gdevelop-app.com/][gdevelop]]
+  + (codeless, js)
+  + [linux, mac, win, web]
+
+- [[https://www.monogame.net/][monogame]]
+  + (csharp)
+  + [linux, mac, win, mobile, web, consoles,...]
+
+- [[https://waveengine.net/][wave engine]]
+  + (csharp)
+  + [linux, mac, win, mobile, web, consoles,...]
+
+- [[https://flatredball.com/][flatredball]]
+  + (csharp)
+  + [win, mobile]
+
+- [[https://fna-xna.github.io/][fna]]
+  + (csharp)
+  + [linux, mac, win, mobile, web, consoles,...]
+
+- [[https://urho3d.io/][urho3d]]
+  + (cpp, lua)
+  + {csharp}
+  + [linux, mac, win, mobile, web,...]
+
+- [[https://www.stride3d.net/][stride]]
+  + (csharp)
+  + [*linux, *mac, win, mobile,...] * can only target
+
+- [[https://www.esenthel.com/][esenthel]]
+  + (cpp)
+  + [linux, mac, win, mobile]
+
+- [[https://solar2d.com/][solar2d (formerly corona sdk)]]
+  + (lua)
+  + [linux, mac, win, mobile, web,...]
+
+- [[https://www.cafu.de/][cafu engine]]
+  + (cpp, lua)
+  + [linux, wim]
+
+- [[https://castle-engine.io/][castle game engine]]
+  + (pascal)
+  + [linux, mac, win, mobile, consoles,...]
+
+- [[https://springrts.com/][spring rts engine]]
+  + (lua)
+  + [linux, mac, win]
+
+- [[https://www.gbstudio.dev/][gb studio]]
+  + (codeless)
+  + [linux, mac, win, web, game boy]
+
+* game engine (-editor)
+- [[https://heaps.io/][heaps]]
+  + (haxe)
+  + [linux, mac, win, mobile, web, consoles]
+
+- [[https://haxeflixel.com/][haxeflixel]]
+  + (haxe)
+  + [linux, mac, win, web]
+
+- [[https://wickedengine.net/][wicked engine]]
+  + (cpp, lua)
+  + [linux, win]
+
+- [[https://www.orx-project.org/][orx]]
+  + (c/cpp)
+  + [linux, mac, win, mobile]
+
+- [[https://bevyengine.org/][bevy]]
+  + (rust)
+  + [linux, mac, win, ]
+
+- [[https://dragonruby.itch.io/dragonruby-gtk][dragonruby gtk]]
+  + (ruby)
+  + [linux, mac, win, web, *mobile, *consoles] * only for premium subscription
+
+- [[https://ncine.github.io/][ncine]]
+  + (cpp, lua)
+  + [linux, mac, win, web, android]
+
+* fantasy consoles
+- [[https://www.lexaloffle.com/pico-8.php][pico8]]
+  + (lua)
+  + [linux, mac, win, web, carts(loaded directly into fantasy console)]
+
+- [[https://pixelvision8.github.io/Website/][pixel vision 8]]
+  - (csharp, lua)
+  - [*linux, *mac, *win,pv8(fantasy console cartrige)] * development platforms
+
+- [[https://tic80.com/][tic-80]]
+  + (lua)
+  + [*linux, *win, *mobile, carts(loaded directly into fantasy consoles)] * development platforms
+
+- [[https://ramilego4game.itch.io/liko12][liko-12]]
+  + (lua)
+  + [*linux, *mac, *win, *love2d, carts(loaded directly into fantasy console)] * development platforms
+
+- [[https://lowresnx.inutilis.com/][lowres nx]]
+  + (basic)
+  + [*linux, *mac, *win, carts(loaded directly into fantasy console)] * development platforms
+
+* others
+- [[https://blitzmax.org/][blitzmax ng]]
+  + cross platform programming language, great for making games, built in tools for game and app development
+
+- [[https://www.cerberus-x.com/][cerberus x]]
+  + cross platform programming language, great for making games, built in tools for game and app development
+
+- [[https://rcbasic.com/][rcbasic]]
+  + cross platform programming language, great for making games, built in tools for game and app development
+
+* software
+- [[https://www.mapeditor.org/][tiled]]
+  + tilemap editor, many output formats
+  + [linux, mac, win]
+
+- [[https://www.vim.org/][vim]]
+  + commendline based text editor
+
+- [[https://www.gnu.org/software/emacs/][emacs]]
+  + more the just text editor...
+
+- [[https://lite-xl.github.io/][lite-xl]]
+  + small text editor (mostly) made in lua
+
+- [[http://grafx2.chez.com/][grafx2]]
+  + retro pixel art tool
+
+- [[https://inkscape.org/][inkscape]]
+  + vector graphics tool
+
+- [[https://github.com/Captain4LK/SoftLK-tools][slk img2pixel]]
+  + tool for converting images to pixel art
+
+- [[https://wiitd.itch.io/yata][yata]]
+  + todo app
+  + self-advertisement

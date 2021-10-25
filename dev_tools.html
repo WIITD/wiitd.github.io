@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-10-25 pon 19:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>dev_tools</title>
+<meta name="author" content="Michał 'wiitd' KM" />
+<meta name="description" content="list of tools, libraries, frameworks, game engines, languages for game and app development" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">dev<sub>tools</sub></h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1c30f55">libs</a></li>
+<li><a href="#org9795fef">frameworks</a></li>
+<li><a href="#org9417a8a">game engine (+editor)</a></li>
+<li><a href="#orgc6373b8">game engine (-editor)</a></li>
+<li><a href="#org1e8bd5b">fantasy consoles</a></li>
+<li><a href="#orgec88d1f">others</a></li>
+<li><a href="#org743fc11">software</a></li>
+</ul>
+</div>
+</div>
+<p>
+!!! disclaimer: list contains only software i used/consider good, almost every entry here is FOSS or free and source available
+</p>
+
+<p>
+no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/might be good but lacks some things i consider essential like small size, lightweight, portable
+</p>
+
+<ul class="org-ul">
+<li>name
+<ul class="org-ul">
+<li>(langs) &lt;- official support</li>
+<li>{bindings} &lt;- community maintained</li>
+<li>[platforms] &lt;- works on or can export/compile to</li>
+</ul></li>
+</ul>
+
+<div id="outline-container-org1c30f55" class="outline-2">
+<h2 id="org1c30f55">libs</h2>
+<div class="outline-text-2" id="text-org1c30f55">
+<ul class="org-ul">
+<li><a href="https://www.raylib.com/">raylib</a>
+<ul class="org-ul">
+<li>(c/cpp)</li>
+<li>{csharp, lua, haxe, freebasic, go,&#x2026;}</li>
+<li>[linux, mac, win, mobile, web]</li>
+</ul></li>
+
+<li><a href="https://www.libsdl.org/">sdl</a>
+<ul class="org-ul">
+<li>(c/cpp)</li>
+<li>{csharp, lua, haxe, freebasic, go,&#x2026;}</li>
+<li>[linux, mac, win, web, mobile,&#x2026;]</li>
+</ul></li>
+
+<li><a href="http://www.tilengine.org/index.htm">tilengine</a>
+<ul class="org-ul">
+<li>(c/cpp)</li>
+<li>{csharp, python, pascal, freebasic, java,&#x2026;}</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+
+<li><a href="https://liballeg.org/">allegro</a>
+<ul class="org-ul">
+<li>(c/cpp)</li>
+<li>{freebasic,&#x2026;}</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+
+<li><a href="https://ebiten.org/">ebiten</a>
+<ul class="org-ul">
+<li>(go)</li>
+<li>[linux, mac, win, mobile, web, switch]</li>
+</ul></li>
+
+<li><a href="https://github.com/faiface/pixel">pixel</a>
+<ul class="org-ul">
+<li>(go)</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9795fef" class="outline-2">
+<h2 id="org9795fef">frameworks</h2>
+<div class="outline-text-2" id="text-org9795fef">
+<ul class="org-ul">
+<li><a href="https://love2d.org/">love2d</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[linux, mac, win, mobile, *web] * developed by comunity</li>
+</ul></li>
+
+<li><a href="https://lovr.org/">lovr</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[linux, mac, win, android, web]</li>
+</ul></li>
+
+<li><a href="https://www.amulet.xyz/">amulet</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[linux, mac, win, mobile, web]</li>
+</ul></li>
+
+<li><a href="https://haxepunk.com/">haxepunk</a>
+<ul class="org-ul">
+<li>(haxe)</li>
+<li>[linux, mac, win, web]</li>
+</ul></li>
+
+<li><a href="https://libgdx.com/">libgdx</a>
+<ul class="org-ul">
+<li>(java)</li>
+<li>[linux, mac, win, mobile, web]</li>
+</ul></li>
+
+<li><a href="https://github.com/Kode/Kha">kha</a>
+<ul class="org-ul">
+<li>(haxe)</li>
+<li>[linux, mac, linux, mobile, web, consoles,&#x2026;, unity3d?!]</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9417a8a" class="outline-2">
+<h2 id="org9417a8a">game engine (+editor)</h2>
+<div class="outline-text-2" id="text-org9417a8a">
+<ul class="org-ul">
+<li><a href="https://godotengine.org/">godot</a>
+<ul class="org-ul">
+<li>(cpp, gdscript, csharp, codeless)</li>
+<li>{rust, lua, nim}</li>
+<li>[linux, mac, win, web]</li>
+</ul></li>
+
+<li><a href="https://defold.com/">defold</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>{haxe}</li>
+<li>[linux, mac, win, mobile, web, switch]</li>
+</ul></li>
+
+<li><a href="https://gdevelop-app.com/">gdevelop</a>
+<ul class="org-ul">
+<li>(codeless, js)</li>
+<li>[linux, mac, win, web]</li>
+</ul></li>
+
+<li><a href="https://www.monogame.net/">monogame</a>
+<ul class="org-ul">
+<li>(csharp)</li>
+<li>[linux, mac, win, mobile, web, consoles,&#x2026;]</li>
+</ul></li>
+
+<li><a href="https://waveengine.net/">wave engine</a>
+<ul class="org-ul">
+<li>(csharp)</li>
+<li>[linux, mac, win, mobile, web, consoles,&#x2026;]</li>
+</ul></li>
+
+<li><a href="https://flatredball.com/">flatredball</a>
+<ul class="org-ul">
+<li>(csharp)</li>
+<li>[win, mobile]</li>
+</ul></li>
+
+<li><a href="https://fna-xna.github.io/">fna</a>
+<ul class="org-ul">
+<li>(csharp)</li>
+<li>[linux, mac, win, mobile, web, consoles,&#x2026;]</li>
+</ul></li>
+
+<li><a href="https://urho3d.io/">urho3d</a>
+<ul class="org-ul">
+<li>(cpp, lua)</li>
+<li>{csharp}</li>
+<li>[linux, mac, win, mobile, web,&#x2026;]</li>
+</ul></li>
+
+<li><a href="https://www.stride3d.net/">stride</a>
+<ul class="org-ul">
+<li>(csharp)</li>
+<li>[*linux, *mac, win, mobile,&#x2026;] * can only target</li>
+</ul></li>
+
+<li><a href="https://www.esenthel.com/">esenthel</a>
+<ul class="org-ul">
+<li>(cpp)</li>
+<li>[linux, mac, win, mobile]</li>
+</ul></li>
+
+<li><a href="https://solar2d.com/">solar2d (formerly corona sdk)</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[linux, mac, win, mobile, web,&#x2026;]</li>
+</ul></li>
+
+<li><a href="https://www.cafu.de/">cafu engine</a>
+<ul class="org-ul">
+<li>(cpp, lua)</li>
+<li>[linux, wim]</li>
+</ul></li>
+
+<li><a href="https://castle-engine.io/">castle game engine</a>
+<ul class="org-ul">
+<li>(pascal)</li>
+<li>[linux, mac, win, mobile, consoles,&#x2026;]</li>
+</ul></li>
+
+<li><a href="https://springrts.com/">spring rts engine</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+
+<li><a href="https://www.gbstudio.dev/">gb studio</a>
+<ul class="org-ul">
+<li>(codeless)</li>
+<li>[linux, mac, win, web, game boy]</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc6373b8" class="outline-2">
+<h2 id="orgc6373b8">game engine (-editor)</h2>
+<div class="outline-text-2" id="text-orgc6373b8">
+<ul class="org-ul">
+<li><a href="https://heaps.io/">heaps</a>
+<ul class="org-ul">
+<li>(haxe)</li>
+<li>[linux, mac, win, mobile, web, consoles]</li>
+</ul></li>
+
+<li><a href="https://haxeflixel.com/">haxeflixel</a>
+<ul class="org-ul">
+<li>(haxe)</li>
+<li>[linux, mac, win, web]</li>
+</ul></li>
+
+<li><a href="https://wickedengine.net/">wicked engine</a>
+<ul class="org-ul">
+<li>(cpp, lua)</li>
+<li>[linux, win]</li>
+</ul></li>
+
+<li><a href="https://www.orx-project.org/">orx</a>
+<ul class="org-ul">
+<li>(c/cpp)</li>
+<li>[linux, mac, win, mobile]</li>
+</ul></li>
+
+<li><a href="https://bevyengine.org/">bevy</a>
+<ul class="org-ul">
+<li>(rust)</li>
+<li>[linux, mac, win, ]</li>
+</ul></li>
+
+<li><a href="https://dragonruby.itch.io/dragonruby-gtk">dragonruby gtk</a>
+<ul class="org-ul">
+<li>(ruby)</li>
+<li>[linux, mac, win, web, *mobile, *consoles] * only for premium subscription</li>
+</ul></li>
+
+<li><a href="https://ncine.github.io/">ncine</a>
+<ul class="org-ul">
+<li>(cpp, lua)</li>
+<li>[linux, mac, win, web, android]</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1e8bd5b" class="outline-2">
+<h2 id="org1e8bd5b">fantasy consoles</h2>
+<div class="outline-text-2" id="text-org1e8bd5b">
+<ul class="org-ul">
+<li><a href="https://www.lexaloffle.com/pico-8.php">pico8</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[linux, mac, win, web, carts(loaded directly into fantasy console)]</li>
+</ul></li>
+
+<li><a href="https://pixelvision8.github.io/Website/">pixel vision 8</a>
+<ul class="org-ul">
+<li>(csharp, lua)</li>
+<li>[*linux, *mac, *win,pv8(fantasy console cartrige)] * development platforms</li>
+</ul></li>
+
+<li><a href="https://tic80.com/">tic-80</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[*linux, *win, *mobile, carts(loaded directly into fantasy consoles)] * development platforms</li>
+</ul></li>
+
+<li><a href="https://ramilego4game.itch.io/liko12">liko-12</a>
+<ul class="org-ul">
+<li>(lua)</li>
+<li>[*linux, *mac, *win, *love2d, carts(loaded directly into fantasy console)] * development platforms</li>
+</ul></li>
+
+<li><a href="https://lowresnx.inutilis.com/">lowres nx</a>
+<ul class="org-ul">
+<li>(basic)</li>
+<li>[*linux, *mac, *win, carts(loaded directly into fantasy console)] * development platforms</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgec88d1f" class="outline-2">
+<h2 id="orgec88d1f">others</h2>
+<div class="outline-text-2" id="text-orgec88d1f">
+<ul class="org-ul">
+<li><a href="https://blitzmax.org/">blitzmax ng</a>
+<ul class="org-ul">
+<li>cross platform programming language, great for making games, built in tools for game and app development</li>
+</ul></li>
+
+<li><a href="https://www.cerberus-x.com/">cerberus x</a>
+<ul class="org-ul">
+<li>cross platform programming language, great for making games, built in tools for game and app development</li>
+</ul></li>
+
+<li><a href="https://rcbasic.com/">rcbasic</a>
+<ul class="org-ul">
+<li>cross platform programming language, great for making games, built in tools for game and app development</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org743fc11" class="outline-2">
+<h2 id="org743fc11">software</h2>
+<div class="outline-text-2" id="text-org743fc11">
+<ul class="org-ul">
+<li><a href="https://www.mapeditor.org/">tiled</a>
+<ul class="org-ul">
+<li>tilemap editor, many output formats</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+
+<li><a href="https://www.vim.org/">vim</a>
+<ul class="org-ul">
+<li>commendline based text editor</li>
+</ul></li>
+
+<li><a href="https://www.gnu.org/software/emacs/">emacs</a>
+<ul class="org-ul">
+<li>more the just text editor&#x2026;</li>
+</ul></li>
+
+<li><a href="https://lite-xl.github.io/">lite-xl</a>
+<ul class="org-ul">
+<li>small text editor (mostly) made in lua</li>
+</ul></li>
+
+<li><a href="http://grafx2.chez.com/">grafx2</a>
+<ul class="org-ul">
+<li>retro pixel art tool</li>
+</ul></li>
+
+<li><a href="https://inkscape.org/">inkscape</a>
+<ul class="org-ul">
+<li>vector graphics tool</li>
+</ul></li>
+
+<li><a href="https://github.com/Captain4LK/SoftLK-tools">slk img2pixel</a>
+<ul class="org-ul">
+<li>tool for converting images to pixel art</li>
+</ul></li>
+
+<li><a href="https://wiitd.itch.io/yata">yata</a>
+<ul class="org-ul">
+<li>todo app</li>
+<li>self-advertisement</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Michał &rsquo;wiitd&rsquo; KM</p>
+<p class="date">Created: 2021-10-25 pon 19:26</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#+TITLE: wiitd_site
+#+DESCRIPTION: main wiitd's site
+#+AUTHOR: Michał 'wiitd' KM
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+hello, i'm wiitd and this is my site, here i post links to my projects
+
+* projects
+- games
+  + hero of the village
+  + [[https://wiitd.itch.io/deadline][deadline]]
+  + [[https://wiitd.itch.io/asteroid-field][asteroid field]]
+  + [[https://wiitd.itch.io/brick-breaker][brick breaker]]
+  + [[https://wiitd.itch.io/the-explorer][the explorer]]
+- apps
+  - [[https://wiitd.itch.io/yata][yata]]
+  - [[https://github.com/WIITD/vsiv][vsin]] - very simple image viewer
+  - [[https://github.com/WIITD/vtl][vtl]] - v terminal launcher
+- others
+  + [[file:dev_tools.org][dev_tools]] - list of tools, libs, frameworks, game engines, languages and other tools worth checking out
+  + [[https://github.com/WIITD/raylib-freebasic][raylib-freebasic]]
+* about
+- self taught programmer and mechatronics technician
+- [[https://wiitd.itch.io/][itch.io]]
+- [[https://github.com/WIITD][github]]
+- [[https://twitter.com/wiitd_][twitter]]
