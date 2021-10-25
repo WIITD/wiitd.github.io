@@ -15,13 +15,16 @@ hello, i'm wiitd and this is my site, here i post links to my projects
   + [[https://wiitd.itch.io/asteroid-field][asteroid field]]
   + [[https://wiitd.itch.io/brick-breaker][brick breaker]]
   + [[https://wiitd.itch.io/the-explorer][the explorer]]
+
 - apps
-  - [[https://wiitd.itch.io/yata][yata]]
-  - [[https://github.com/WIITD/vsiv][vsin]] - very simple image viewer
-  - [[https://github.com/WIITD/vtl][vtl]] - v terminal launcher
+  - [[https://wiitd.itch.io/yata][yata]] - yet another todo app
+  - [[https://github.com/WIITD/vsiv][vsiv]] - v_ery s_imple i_mage v_iewer
+  - [[https://github.com/WIITD/vtl][vtl]] - v t_erminal l_auncher
+
 - others
   + [[file:dev_tools.org][dev_tools]] - list of tools, libs, frameworks, game engines, languages and other tools worth checking out
   + [[https://github.com/WIITD/raylib-freebasic][raylib-freebasic]]
+
 * about
 - self taught programmer and mechatronics technician
 - [[https://wiitd.itch.io/][itch.io]]

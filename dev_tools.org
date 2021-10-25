@@ -5,7 +5,8 @@
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
 #+OPTIONS: num:nil
 
-!!! disclaimer: list contains only software i used/consider good, almost every entry here is FOSS or free and source available
+|   |
+!!! disclaimer: list contains only software i used/consider good, almost every entry here is FOSS or source available
 
 no unity, ue, cryengine, [insert popular game engine name],..., they are/might be good but lacks some things i consider essential like small size, lightweight, portable
 
@@ -66,7 +67,7 @@ no unity, ue, cryengine, [insert popular game engine name],..., they are/might b
 
 - [[https://github.com/Kode/Kha][kha]]
   + (haxe)
-  + [linux, mac, linux, mobile, web, consoles,..., unity3d?!]
+  + [linux, mac, win, mobile, web, consoles,..., unity3d?!]
 
 * game engine (+editor)
 - [[https://godotengine.org/][godot]]
@@ -199,22 +200,29 @@ no unity, ue, cryengine, [insert popular game engine name],..., they are/might b
 
 - [[https://www.vim.org/][vim]]
   + commendline based text editor
+  + [linux, unix, haiku, mac, win, mobile,...]
 
 - [[https://www.gnu.org/software/emacs/][emacs]]
-  + more the just text editor...
+  + more then just a text editor...
+  + [linux, mac, win,...]
 
 - [[https://lite-xl.github.io/][lite-xl]]
   + small text editor (mostly) made in lua
+  + [linux, mac, win]
 
 - [[http://grafx2.chez.com/][grafx2]]
   + retro pixel art tool
+  + [linux, mac, win,...]
 
 - [[https://inkscape.org/][inkscape]]
   + vector graphics tool
+  + [linux, mac, win]
 
 - [[https://github.com/Captain4LK/SoftLK-tools][slk img2pixel]]
   + tool for converting images to pixel art
+  + [linux, mac, win]
 
 - [[https://wiitd.itch.io/yata][yata]]
   + todo app
   + self-advertisement
+  + [linux, mac, win]
