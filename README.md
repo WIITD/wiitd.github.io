@@ -1,5 +1,5 @@
 # wiitd_site
-[link to site](https://wiitd.github.io/wiitd_site/)  
+[link to site](https://wiitd.github.io/)  
   
   
 created using org-mode  

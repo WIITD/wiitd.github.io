@@ -1,10 +1,8 @@
 #+TITLE: wiitd_site
 #+DESCRIPTION: wiitd offical site
 #+AUTHOR: Michał 'wiitd' KM
-#+BEGIN_COMMENT
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-#+END_COMMENT
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 
@@ -19,9 +17,9 @@ hello, i'm wiitd and this is my site, here i post links to my projects
   + [[https://wiitd.itch.io/the-explorer][the explorer]]
 
 - apps
-  - [[https://wiitd.itch.io/yata][yata]] - y_et a_nother t_odo a_pp
-  - [[https://github.com/WIITD/vsiv][vsiv]] - v_ery s_imple i_mage v_iewer
-  - [[https://github.com/WIITD/vtl][vtl]] - v t_erminal l_auncher
+  + [[https://wiitd.itch.io/yata][yata]] - y_et a_nother t_odo a_pp
+  + [[https://github.com/WIITD/vsiv][vsiv]] - v_ery s_imple i_mage v_iewer
+  + [[https://github.com/WIITD/vtl][vtl]] - v t_erminal l_auncher
 
 - others
   + [[file:dev_tools.org][dev_tools]] - list of tools, libs, frameworks, game engines, languages and other tools worth checking out

@@ -1,10 +1,8 @@
 #+TITLE: dev_tools
 #+DESCRIPTION: list of tools, libraries, frameworks, game engines, languages for game and app development
 #+AUTHOR: Michał 'wiitd' KM
-#+BEGIN_COMMENT
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
-#+END_COMMENT
 #+OPTIONS: num:nil
 
 |   |
