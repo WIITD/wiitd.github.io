@@ -209,15 +209,37 @@ no unity, ue, cryengine, [insert popular game engine name],..., they are/might b
   + (basic)
   + [*linux, *mac, *win, carts(loaded directly into fantasy console)] * development platforms
 
-* others
+* languages
 - [[https://blitzmax.org/][blitzmax ng]]
-  + cross platform programming language, great for making games, built in tools for game and app development
+  + blitzmax but better
 
 - [[https://www.cerberus-x.com/][cerberus x]]
-  + cross platform programming language, great for making games, built in tools for game and app development
+  + monkey x but better
 
 - [[https://rcbasic.com/][rcbasic]]
-  + cross platform programming language, great for making games, built in tools for game and app development
+  + yet another basic language for easy game and app dev
+
+- [[https://ziglang.org/][zig]]
+  + c but simpler
+
+- [[https://www.rust-lang.org/][rust]]
+  + cpp but better
+
+- [[https://vlang.io/][v]]
+  + wouldn't it be better if making small and fast apps was easy?
+
+* others
+- [[https://www.conventionalcommits.org/en/v1.0.0-beta.2/][conventional commits]]
+  + your commits sucks
+
+- [[https://gist.github.com/bkaradzic/2e39896bc7d8c34e042b][orthodox cpp]]
+  + cpp but better
+
+- [[https://wiki.archlinux.org/][arch wiki]]
+  + how to linux?
+
+- [[https://www.stickermule.com/eu/products/unixstickers-pro-pack][unix stickers]]
+  + ricing linux without them is a crime
 
 * software
 - [[https://www.mapeditor.org/][tiled]]
