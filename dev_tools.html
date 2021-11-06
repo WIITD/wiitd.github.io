@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-10-27 śro 16:10 -->
+<!-- 2021-11-06 sob 01:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>dev_tools</title>
@@ -204,13 +204,13 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga687d48">libs</a></li>
-<li><a href="#org2548cbd">frameworks</a></li>
-<li><a href="#org4caf50e">game engine (+editor)</a></li>
-<li><a href="#org583427c">game engine (-editor)</a></li>
-<li><a href="#org605dd7b">fantasy consoles</a></li>
-<li><a href="#org980d890">others</a></li>
-<li><a href="#orgcd81b10">software</a></li>
+<li><a href="#org4b049aa">libs</a></li>
+<li><a href="#org16bc64e">frameworks</a></li>
+<li><a href="#org26606ca">game engine (+editor)</a></li>
+<li><a href="#org5fb6626">game engine (-editor)</a></li>
+<li><a href="#orgc561beb">fantasy consoles</a></li>
+<li><a href="#orgd3b8ed8">others</a></li>
+<li><a href="#orgb79cf3c">software</a></li>
 </ul>
 </div>
 </div>
@@ -227,7 +227,7 @@
 </tbody>
 </table>
 <p>
-!!! disclaimer: list contains only software i used/consider good, almost every entry here is FOSS or source available
+!!! disclaimer: list contains only software i used/consider good, almost every entry here is foss or source available
 </p>
 
 <p>
@@ -243,9 +243,9 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 </ul></li>
 </ul>
 
-<div id="outline-container-orga687d48" class="outline-2">
-<h2 id="orga687d48">libs</h2>
-<div class="outline-text-2" id="text-orga687d48">
+<div id="outline-container-org4b049aa" class="outline-2">
+<h2 id="org4b049aa">libs</h2>
+<div class="outline-text-2" id="text-org4b049aa">
 <ul class="org-ul">
 <li><a href="https://www.raylib.com/">raylib</a>
 <ul class="org-ul">
@@ -261,6 +261,13 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 <li>[linux, mac, win, web, mobile,&#x2026;]</li>
 </ul></li>
 
+<li><a href="https://www.glfw.org/">glfw</a>
+<ul class="org-ul">
+<li>(c/cpp)</li>
+<li>{csharp, java, rust, go,&#x2026;}</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+
 <li><a href="http://www.tilengine.org/index.htm">tilengine</a>
 <ul class="org-ul">
 <li>(c/cpp)</li>
@@ -272,6 +279,19 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 <ul class="org-ul">
 <li>(c/cpp)</li>
 <li>{freebasic,&#x2026;}</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+
+<li><a href="https://www.sfml-dev.org/">sfml</a>
+<ul class="org-ul">
+<li>(cpp)</li>
+<li>{c, csharp, java, ruby, go,&#x2026;}</li>
+<li>[linux, mac, win]</li>
+</ul></li>
+
+<li><a href="https://www.lwjgl.org/">lwjgl</a>
+<ul class="org-ul">
+<li>(java)</li>
 <li>[linux, mac, win]</li>
 </ul></li>
 
@@ -290,9 +310,9 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 </div>
 </div>
 
-<div id="outline-container-org2548cbd" class="outline-2">
-<h2 id="org2548cbd">frameworks</h2>
-<div class="outline-text-2" id="text-org2548cbd">
+<div id="outline-container-org16bc64e" class="outline-2">
+<h2 id="org16bc64e">frameworks</h2>
+<div class="outline-text-2" id="text-org16bc64e">
 <ul class="org-ul">
 <li><a href="https://love2d.org/">love2d</a>
 <ul class="org-ul">
@@ -318,24 +338,42 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 <li>[linux, mac, win, web]</li>
 </ul></li>
 
+<li><a href="https://github.com/Kode/Kha">kha</a>
+<ul class="org-ul">
+<li>(haxe)</li>
+<li>[linux, mac, win, mobile, web, consoles,&#x2026;, unity3d?!]</li>
+</ul></li>
+
+<li><a href="https://www.openfl.org/">openfl</a>
+<ul class="org-ul">
+<li>(haxe)</li>
+<li>[linux, mac, win, mobile, web, flash]</li>
+</ul></li>
+
 <li><a href="https://libgdx.com/">libgdx</a>
 <ul class="org-ul">
 <li>(java)</li>
 <li>[linux, mac, win, mobile, web]</li>
 </ul></li>
 
-<li><a href="https://github.com/Kode/Kha">kha</a>
+<li><a href="https://ggez.rs/">ggez</a>
 <ul class="org-ul">
-<li>(haxe)</li>
-<li>[linux, mac, win, mobile, web, consoles,&#x2026;, unity3d?!]</li>
+<li>(rust)</li>
+<li>[linux, win]</li>
+</ul></li>
+
+<li><a href="https://www.appgamekit.com/">AppGameKit Classic</a>
+<ul class="org-ul">
+<li>(basic/cpp)</li>
+<li>[linux, mac, win, mobile, web]</li>
 </ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org4caf50e" class="outline-2">
-<h2 id="org4caf50e">game engine (+editor)</h2>
-<div class="outline-text-2" id="text-org4caf50e">
+<div id="outline-container-org26606ca" class="outline-2">
+<h2 id="org26606ca">game engine (+editor)</h2>
+<div class="outline-text-2" id="text-org26606ca">
 <ul class="org-ul">
 <li><a href="https://godotengine.org/">godot</a>
 <ul class="org-ul">
@@ -433,9 +471,9 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 </div>
 </div>
 
-<div id="outline-container-org583427c" class="outline-2">
-<h2 id="org583427c">game engine (-editor)</h2>
-<div class="outline-text-2" id="text-org583427c">
+<div id="outline-container-org5fb6626" class="outline-2">
+<h2 id="org5fb6626">game engine (-editor)</h2>
+<div class="outline-text-2" id="text-org5fb6626">
 <ul class="org-ul">
 <li><a href="https://heaps.io/">heaps</a>
 <ul class="org-ul">
@@ -482,9 +520,9 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 </div>
 </div>
 
-<div id="outline-container-org605dd7b" class="outline-2">
-<h2 id="org605dd7b">fantasy consoles</h2>
-<div class="outline-text-2" id="text-org605dd7b">
+<div id="outline-container-orgc561beb" class="outline-2">
+<h2 id="orgc561beb">fantasy consoles</h2>
+<div class="outline-text-2" id="text-orgc561beb">
 <ul class="org-ul">
 <li><a href="https://www.lexaloffle.com/pico-8.php">pico8</a>
 <ul class="org-ul">
@@ -519,9 +557,9 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 </div>
 </div>
 
-<div id="outline-container-org980d890" class="outline-2">
-<h2 id="org980d890">others</h2>
-<div class="outline-text-2" id="text-org980d890">
+<div id="outline-container-orgd3b8ed8" class="outline-2">
+<h2 id="orgd3b8ed8">others</h2>
+<div class="outline-text-2" id="text-orgd3b8ed8">
 <ul class="org-ul">
 <li><a href="https://blitzmax.org/">blitzmax ng</a>
 <ul class="org-ul">
@@ -541,9 +579,9 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 </div>
 </div>
 
-<div id="outline-container-orgcd81b10" class="outline-2">
-<h2 id="orgcd81b10">software</h2>
-<div class="outline-text-2" id="text-orgcd81b10">
+<div id="outline-container-orgb79cf3c" class="outline-2">
+<h2 id="orgb79cf3c">software</h2>
+<div class="outline-text-2" id="text-orgb79cf3c">
 <ul class="org-ul">
 <li><a href="https://www.mapeditor.org/">tiled</a>
 <ul class="org-ul">
@@ -599,7 +637,7 @@ no unity, ue, cryengine, [insert popular game engine name],&#x2026;, they are/mi
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Michał &rsquo;wiitd&rsquo; KM</p>
-<p class="date">Created: 2021-10-27 śro 16:10</p>
+<p class="date">Created: 2021-11-06 sob 01:03</p>
 </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
 #+OPTIONS: num:nil
 
 |   |
-!!! disclaimer: list contains only software i used/consider good, almost every entry here is FOSS or source available
+!!! disclaimer: list contains only software i used/consider good, almost every entry here is foss or source available
 
 no unity, ue, cryengine, [insert popular game engine name],..., they are/might be good but lacks some things i consider essential like small size, lightweight, portable
 
@@ -26,6 +26,11 @@ no unity, ue, cryengine, [insert popular game engine name],..., they are/might b
   + {csharp, lua, haxe, freebasic, go,...}
   + [linux, mac, win, web, mobile,...]
 
+- [[https://www.glfw.org/][glfw]]
+  + (c/cpp)
+  + {csharp, java, rust, go,...}
+  + [linux, mac, win]
+
 - [[http://www.tilengine.org/index.htm][tilengine]]
   + (c/cpp)
   + {csharp, python, pascal, freebasic, java,...}
@@ -34,6 +39,15 @@ no unity, ue, cryengine, [insert popular game engine name],..., they are/might b
 - [[https://liballeg.org/][allegro]]
   + (c/cpp)
   + {freebasic,...}
+  + [linux, mac, win]
+
+- [[https://www.sfml-dev.org/][sfml]]
+  + (cpp)
+  + {c, csharp, java, ruby, go,...}
+  + [linux, mac, win]
+
+- [[https://www.lwjgl.org/][lwjgl]]
+  + (java)
   + [linux, mac, win]
 
 - [[https://ebiten.org/][ebiten]]
@@ -61,13 +75,25 @@ no unity, ue, cryengine, [insert popular game engine name],..., they are/might b
   + (haxe)
   + [linux, mac, win, web]
 
+- [[https://github.com/Kode/Kha][kha]]
+  + (haxe)
+  + [linux, mac, win, mobile, web, consoles,..., unity3d?!]
+
+- [[https://www.openfl.org/][openfl]]
+  + (haxe)
+  + [linux, mac, win, mobile, web, flash]
+
 - [[https://libgdx.com/][libgdx]]
   + (java)
   + [linux, mac, win, mobile, web]
 
-- [[https://github.com/Kode/Kha][kha]]
-  + (haxe)
-  + [linux, mac, win, mobile, web, consoles,..., unity3d?!]
+- [[https://ggez.rs/][ggez]]
+  + (rust)
+  + [linux, win]
+
+- [[https://www.appgamekit.com/][AppGameKit Classic]]
+  + (basic/cpp)
+  + [linux, mac, win, mobile, web]
 
 * game engine (+editor)
 - [[https://godotengine.org/][godot]]
